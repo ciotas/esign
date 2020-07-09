@@ -9,11 +9,16 @@
     "license": "MIT",
     "require": {
         "php": "^7.2.5",
+        "achais/esign": "dev-master",
+        "dcat/easy-excel": "^1.0",
+        "dcat/laravel-admin": "^1.5",
         "fideloper/proxy": "^4.2",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^6.3",
+        "intervention/image": "^2.5",
         "laravel/framework": "^7.0",
-        "laravel/tinker": "^2.0"
+        "laravel/tinker": "^2.0",
+        "yansongda/pay": "^2.9"
     },
     "require-dev": {
         "facade/ignition": "^2.0",
