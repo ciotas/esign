@@ -31,23 +31,6 @@ class AppServiceProvider extends ServiceProvider
             return Pay::alipay($config);
         });
 
-        // esign
-        $this->app->singleton('esign', function () {
-            $config = [
-                'debug' => true, // 是否开启调试
-                'app_id' => "****", // 请替换成自己的 AppId
-                'secret' => '****', // 请替换成自己的 Secret
-                'production' => false, // 是否正式环境
-
-                'log' => [
-                    'level'      => 'debug',
-                    'permission' => 0777,
-                    'file'       =>  storage_path('logs'), // 开启调试时有效, 可指定日志文件地址
-                ],
-            ];
-            return new \Achais\ESign\Application($config);
-        });
-
     }
 
     /**

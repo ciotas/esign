@@ -45,7 +45,6 @@ class UserController extends AdminController
 //            $grid->disableRowSelector();
 
             $grid->filter(function (Grid\Filter $filter) {
-//                $filter->panel();
                 $filter->equal('id');
                 $filter->scope('new', '最近修改')
                     ->whereDate('created_at', date('Y-m-d'))
